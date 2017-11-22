@@ -134,5 +134,10 @@ public class MainActivity extends AppCompatActivity
         Intent intent = new Intent(getApplicationContext(), Noticia.class);
         startActivity(intent);
     }
+
+    public void verSobre(MenuItem item) {
+        Intent intent = new Intent(getApplicationContext(), Sobre.class);
+        startActivity(intent);
+    }
 }
 

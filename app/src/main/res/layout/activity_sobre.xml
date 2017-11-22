@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.cnt.soma.somapp.Sobre">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/about_appname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Aplicativo SomApp"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/about_versao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*** Versão de Teste ***"
+            android:textAlignment="center"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/about_logo"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/logo1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"/>
+
+        <TextView
+            android:id="@+id/about_empresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="₢ 2017 Assessoria Contábil Soma Ltda"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/about_direitos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Todos os direitos reservados"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/about_desenvolvedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desenvolvido por Marlon Pinheiro"
+            android:textAlignment="center"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/about_contato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contato: marlonpdcabral@gmail.com"
+            android:textAlignment="center" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
