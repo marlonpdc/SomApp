@@ -1,6 +1,7 @@
 package br.cnt.soma.somapp;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -127,6 +128,11 @@ public class MainActivity extends AppCompatActivity
         });
         AlertDialog alert = builder.create();
         alert.show();
+    }
+
+    public void abriNoticia(MenuItem item) {
+        Intent intent = new Intent(getApplicationContext(), Noticia.class);
+        startActivity(intent);
     }
 }
 
