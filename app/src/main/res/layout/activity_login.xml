@@ -7,13 +7,71 @@
     android:layout_height="match_parent"
     tools:context="br.cnt.soma.somapp.Login">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_marginTop="50dp"
+            android:layout_width="250dp"
+            android:layout_height="120dp"
+            android:background="@drawable/logo2"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/txt_loginName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_action_user"
+            android:ems="10"
+            android:hint="Usuário"
+            android:inputType="textPersonName"
+            android:textColorLink="@color/colorAccent"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txt_loginPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_action_pass"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:textColorLink="@color/colorAccent"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/ck_login_keepLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manter conectado"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:text="@string/entrar"
+            android:textSize="20sp"
+            android:onClick="validar"/>
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

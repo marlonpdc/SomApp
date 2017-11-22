@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SomApp</string>
+    <string name="entrar">Entrar</string>
+    <string name="title_activity_main">SomAPP</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Configurações</string>
 </resources>
