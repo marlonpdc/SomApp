@@ -23,7 +23,8 @@
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme" />
         <activity android:name=".Noticia" />
-        <activity android:name=".Sobre"></activity>
+        <activity android:name=".Sobre" />
+        <activity android:name=".Documentos"></activity>
     </application>
 
 </manifest>

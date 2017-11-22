@@ -2,6 +2,7 @@ package br.cnt.soma.somapp;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -137,6 +138,11 @@ public class MainActivity extends AppCompatActivity
 
     public void verSobre(MenuItem item) {
         Intent intent = new Intent(getApplicationContext(), Sobre.class);
+        startActivity(intent);
+    }
+
+    public void verDocumentos(MenuItem item) {
+        Intent intent = new Intent(getApplicationContext(), Documentos.class);
         startActivity(intent);
     }
 }
