@@ -24,7 +24,8 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".Noticia" />
         <activity android:name=".Sobre" />
-        <activity android:name=".Documentos"></activity>
+        <activity android:name=".Documentos" />
+        <activity android:name=".ListViewEmpresas"></activity>
     </application>
 
 </manifest>

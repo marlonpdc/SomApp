@@ -145,5 +145,10 @@ public class MainActivity extends AppCompatActivity
         Intent intent = new Intent(getApplicationContext(), Documentos.class);
         startActivity(intent);
     }
+
+    public void verEmpresas(MenuItem item) {
+        Intent intent = new Intent(getApplicationContext(), ListViewEmpresas.class);
+        startActivity(intent);
+    }
 }
 
