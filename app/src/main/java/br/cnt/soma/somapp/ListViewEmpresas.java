@@ -1,9 +1,12 @@
 package br.cnt.soma.somapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -65,6 +68,21 @@ public class ListViewEmpresas extends AppCompatActivity {
         };
 
         lstView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,listaEmpresas));
+
+        lstView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                if(position==3){
+                    Intent intent = new Intent(view.getContext(), DadosSoma.class);
+                    startActivityForResult(intent, 3);
+                }
+                else if(position==19){
+                    Intent intent = new Intent(view.getContext(), DadosMatahari.class);
+                    startActivityForResult(intent, 19);
+                }
+
+            }
+        });
 
         pesquisar();
 

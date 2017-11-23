@@ -25,7 +25,9 @@
         <activity android:name=".Noticia" />
         <activity android:name=".Sobre" />
         <activity android:name=".Documentos" />
-        <activity android:name=".ListViewEmpresas"></activity>
+        <activity android:name=".ListViewEmpresas" />
+        <activity android:name=".DadosSoma" />
+        <activity android:name=".DadosMatahari"></activity>
     </application>
 
 </manifest>
