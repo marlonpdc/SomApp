@@ -8,4 +8,9 @@
     tools:context="br.cnt.soma.somapp.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/telainicial" />
 </android.support.constraint.ConstraintLayout>
